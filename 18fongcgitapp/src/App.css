@@ -1,0 +1,18 @@
+App {
+  background: rgb(0,0,0);
+
+}
+
+
+.app {
+  /* height: 100vh; */
+  background: rgb(20, 20, 126)
+}
+
+.front{ 
+  padding: 1rem;
+}
+
+.sidebar {
+  border: 1px solid black;
+}
