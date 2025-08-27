@@ -1,0 +1,1 @@
+:root{--sidebar-width: 200px}.sidebar{border:1px solid black;width:var(--sidebar-width);height:100%;position:fixed}.sidebar-list{list-style-type:none;padding:1rem}.sidebar-item{transition:background .2s;background:#7d7dff;padding:1rem}.sidebar-item.highlighted{color:#fff}body{background-color:#7e7f80}.app{background:#14147e}.front{width:100%;margin-left:var(--sidebar-width)}
