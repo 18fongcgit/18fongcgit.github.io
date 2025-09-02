@@ -1,4 +1,5 @@
 import './App.css'
+import Item from './components/Item'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
       <div className="Projects">
         <h3>Projects</h3>
         <ul>
-          
+          <Item></Item>
         </ul>
       </div>
     </div>
