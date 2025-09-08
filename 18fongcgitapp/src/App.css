@@ -6,17 +6,25 @@ body {
   transition: background-color 0.4s;
 }
 
+.p5-background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none; /* Optional: allows clicks to pass through */
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 1;
+}
 
 .Introduction {
   padding: 8rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.IntroText {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .Introduction h1 {
@@ -26,13 +34,6 @@ body {
 
 .Introduction h2 {
   margin: 0px;
-}
-
-.Introduction img {
-    margin-right: 100px;
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 50%;
 }
 
 .FooterBar {

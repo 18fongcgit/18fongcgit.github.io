@@ -1,23 +1,25 @@
 import './App.css'
-// import Item from './components/Item'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
-import CoolPicture from './assets/cool background .jpg'
+import P5canvas from "./components/P5canvas";
+
+
 
 function App() {
 
   return (
-
-    <div className='App'>
-      <NavBar />
-      <div className="Introduction">
-        <div className='IntroText'>
-          <h1>Hello! I'm Alex Fong</h1>
-          <h2>Welcome to my website!</h2>
-        </div>
-        <img src={CoolPicture} alt='Senior Photo' />
+    <div className="App">
+      <div className="p5-background-canvas">
+        <P5canvas/>  
       </div>
-      <Footer />
+      <div className="overlay-content">
+        <NavBar />
+        <div className="Introduction">
+            <h1>Hello! I'm Alex Fong</h1>
+            <h2>Welcome to my website!</h2>
+        </div>
+        <Footer />
+      </div>
     </div>
 
   )
