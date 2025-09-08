@@ -1,0 +1,87 @@
+.NavBar {
+  background-color: var(--main-bg-color);
+  align-items: center;
+  padding: 15px 15px;
+  border-bottom: 0.5px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavBarLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.NavBar ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.NavBarItem {
+  padding: 15px 20px;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.NavBarItem span {
+  position: relative;       /* anchor for ::after */
+  display: inline-block;
+}
+
+.NavBarItem span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--hover-text-color);
+  transition: width 0.2s;
+}
+
+.NavBarItem:hover span::after {
+  width: 100%;
+}
+
+.NavBarItem:hover {
+  color: var(--hover-text-color);
+}
+
+
+.NavBar h2 {
+  margin: 0px;
+  margin-left: 10px;
+  color: var(--main-text-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  align-items: center;
+  transition: color 0.2s;
+
+}
+
+#HomePage {
+  text-decoration: none;
+  padding: 0px;
+  transition: color 0.2s;
+}
+
+#HomePage :hover {
+  color: var(--hover-text-color);
+}
+
+#githubIcon {
+  flex-direction: row-reverse;
+  opacity: 1;
+  filter: var(--filter-main);
+  transition: filter 0.2s;
+}
+
+#githubIcon:hover {
+  filter: none;
+}
