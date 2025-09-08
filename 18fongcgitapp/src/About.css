@@ -8,8 +8,9 @@ body {
 .AboutPage {
   padding: 20px;
   max-width: 800px;
-  margin: auto;
+  margin: 0px auto 0px auto;
   line-height: 1.6;
+  margin-bottom: 80px;
 }
 
 .AboutPage ul {
@@ -20,11 +21,25 @@ body {
 }
 
 .AboutPage a {
+  position: relative;
   margin-bottom: 10px;
   text-decoration: none;
   color: var(--main-text-color);
-  transition: color 0.2s;
+}
 
+.AboutPage a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* adjust spacing under text */
+  width: 0;
+  height: 2px;
+  background-color: var(--hover-text-color);
+  transition: color 0.2s, width 0.2s ease;
+}
+
+.AboutPage a:hover::after {
+  width: 100%;
 }
 
 .AboutPage a:hover {
