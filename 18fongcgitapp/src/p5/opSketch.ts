@@ -1,7 +1,8 @@
 // src/p5/opSketch.ts
 import p5 from "p5";
 
-export const opSketch = (p: p5) => {
+export const opSketch = (p: p5, colors: { stroke: string; background: string }) => {
+  // const isDarkMode = useTheme();
   class Droplet {
     x: number;
     y: number;
@@ -11,6 +12,7 @@ export const opSketch = (p: p5) => {
     secondRadiusSpeed: number;
     randomMaxRadius: number;
     randomSecondMaxRadius: number;
+    alpha: number;
 
     constructor(x: number, y: number) {
       this.x = x;
@@ -21,11 +23,16 @@ export const opSketch = (p: p5) => {
       this.secondRadiusSpeed = p.random(4, 6);
       this.randomMaxRadius = p.random(350, 450);
       this.randomSecondMaxRadius = p.random(350, 450);
+      this.alpha = 255;
     }
 
     show() {
       p.noFill();
-      p.stroke("#18bad4");
+      var strokeColor = p.color(colors.stroke);
+      strokeColor.setAlpha(this.alpha);
+      this.alpha-= 2.5;
+      p.stroke(strokeColor);
+
 
       if (this.radius <= this.randomMaxRadius) {
         p.circle(this.x, this.y, this.radius);
@@ -46,12 +53,11 @@ export const opSketch = (p: p5) => {
   p.setup = () => {
     // The wrapper will resize this to the parent; this is just an initial size.
     p.createCanvas(p.windowWidth, p.windowHeight);
-    p.background(100);
   };
 
   p.draw = () => {
     const newDrop = p.int(p.random(30));
-    p.background("#0e293c");
+    p.background(colors.background);
 
     // Iterate backwards so splice doesn't skip the next element
     for (let i = droplets.length - 1; i >= 0; i--) {

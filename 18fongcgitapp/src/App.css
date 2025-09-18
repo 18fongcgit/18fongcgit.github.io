@@ -25,15 +25,20 @@ body {
   padding: 8rem;
   align-items: center;
   text-align: center;
+  user-select: none;
 }
 
 .Introduction h1 {
   margin: 0px;
   display: block;
+  font-size: 64px;
+  user-select: none;
 }
 
 .Introduction h2 {
+  font-size: 48px;
   margin: 0px;
+  user-select: none;
 }
 
 .FooterBar {
