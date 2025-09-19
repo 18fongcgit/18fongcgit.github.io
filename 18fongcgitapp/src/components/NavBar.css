@@ -5,6 +5,11 @@
   border-bottom: 0.5px solid var(--border-color);
   display: flex;
   justify-content: space-between;
+  top: 0;
+  height: var(--NavBar-height);
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
 }
 
 .NavBarLeft {
@@ -30,7 +35,10 @@
 }
 
 .NavBarItem span {
-  position: relative;       /* anchor for ::after */
+  position: relative;
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
   display: inline-block;
 }
 
@@ -60,6 +68,7 @@
   color: var(--main-text-color);
   text-decoration: none;
   padding: 10px 20px;
+  padding-top: 5px;
   align-items: center;
   transition: color 0.2s;
 
@@ -76,7 +85,7 @@
 }
 
 #githubIcon {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   opacity: 1;
   filter: var(--filter-main);
   transition: filter 0.2s;
@@ -84,4 +93,77 @@
 
 #githubIcon:hover {
   filter: none;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.HamburgerIcon.active {
+  stroke: var(--hover-text-color);
+  transition: stroke 0.2s;
+}
+
+.NavBar ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+
+  .NavBar h2 {
+    white-space: nowrap;
+
+  }
+
+  .NavBar ul {
+    display: none;
+    flex-direction: column;
+
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--NavBar-height);
+    right: 0;
+    background: var(--main-bg-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-links.show {
+    margin:0;
+    left:0;
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    left: 0px;
+    justify-content: space-around;
+  }
+}
+
+.HamburgerIcon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--main-text-color);
+  transition: stroke 0.2s;
+  /* <-- Move transition here */
 }

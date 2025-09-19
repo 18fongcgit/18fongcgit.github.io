@@ -1,5 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
-
+import './Footer.css'
 import MoonIcon from './Moonicon'
 import SunIcon from './Sunicon'
 

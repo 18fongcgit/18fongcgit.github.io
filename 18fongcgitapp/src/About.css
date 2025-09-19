@@ -9,6 +9,8 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: 0px auto 0px auto;
+  margin-bottom: var(--Footer-height);
+  margin-top: var(--NavBar-height);
   line-height: 1.6;
   margin-bottom: 80px;
 }
