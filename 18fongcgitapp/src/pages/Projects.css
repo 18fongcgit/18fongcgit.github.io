@@ -7,8 +7,20 @@ body {
   transition: background-color 0.4s;
 }
 
+.Projects h2 {
+  margin: 0px;
+  display: block;
+  user-select: none;
+  text-align: left;
+}
+.Projects h3 {
+  margin: 0px;
+  user-select: none;
+  text-align: left;
+}
+
 .Projects {
-  padding: 8rem;
+  padding: 3rem 8rem;
   align-items: center;
   text-align: center;
   user-select: none;
@@ -16,4 +28,14 @@ body {
   margin-bottom: var(--Footer-height); /* Adjust this value based on the height of your Footer */
 }
 
+.Projects ul {
+  list-style-type: none;
+  padding: 0px;
+}
 
+
+@media (max-width: 600px) {
+  .Projects {
+    padding: 2rem 1rem;
+  }
+}

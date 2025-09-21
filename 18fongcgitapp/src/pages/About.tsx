@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
-import '../About.css';
+import './About.css';
 import { opSketchAbout } from "../p5/opSketchAbout";
 import P5canvas from "../components/P5canvas";
 

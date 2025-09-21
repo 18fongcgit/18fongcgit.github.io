@@ -1,0 +1,11 @@
+.NotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 20px;
+    margin-top: var(--NavBar-height);
+    margin-bottom: var(--Footer-height);
+}

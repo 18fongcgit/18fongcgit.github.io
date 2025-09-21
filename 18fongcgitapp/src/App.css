@@ -70,11 +70,16 @@ body {
   --border-color: #333;
   --filter-main: var(--filter-dark);
   --filter-dark: invert(24%) sepia(19%) saturate(2730%) hue-rotate(150deg) brightness(93%) contrast(91%);
+  --item-height: 12vh;
+  --item-width: 80vw;
+  --main-bg-hover-color:#184769;
+  --main-bg-hover-color-light:#d0e8f3;
 }
 
 :root[data-theme="light"] {
   --main-bg-color: var(--main-bg-color-light);
   --main-text-color: var(--main-text-color-light);
+  --main-bg-hover-color: var(--main-bg-hover-color-light);
   --filter-main: var(--filter-light);
   --filter-light:  brightness(0) saturate(100%) invert(23%) sepia(11%) saturate(5237%) hue-rotate(153deg) brightness(95%) contrast(91%);
   --hover-text-color: #000000;
