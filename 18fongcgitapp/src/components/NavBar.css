@@ -134,6 +134,10 @@
     flex-direction: column;
 
   }
+  .NavBarItem {
+    border-bottom: 0.5px solid var(--border-color);
+    width: 100%;
+  }
 
   .nav-links {
     display: none;

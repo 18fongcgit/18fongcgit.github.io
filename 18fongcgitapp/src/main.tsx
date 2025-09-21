@@ -6,6 +6,7 @@ import App from './App.tsx';
 import About from './pages/About.tsx';
 import Projects from './pages/Projects.tsx';
 import { ThemeProvider } from './context/ThemeContext';
+import Skills from './pages/Skills.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </ThemeProvider>
     </HashRouter>
