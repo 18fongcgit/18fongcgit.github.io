@@ -8,4 +8,15 @@
     padding: 20px;
     margin-top: var(--NavBar-height);
     margin-bottom: var(--Footer-height);
+    
+}
+
+.ascii-art{
+  white-space: pre;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  line-height: 1;
+  font-size: 5px;
+  padding: 16px;
+  overflow: auto;
+  user-select: none;
 }
