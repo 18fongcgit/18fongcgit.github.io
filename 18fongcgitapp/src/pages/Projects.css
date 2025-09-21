@@ -25,7 +25,7 @@ body {
   text-align: center;
   user-select: none;
   margin-top: var(--NavBar-height); /* Adjust this value based on the height of your NavBar */
-  margin-bottom: var(--Footer-height); /* Adjust this value based on the height of your Footer */
+  margin-bottom: 0px; /* Adjust this value based on the height of your Footer */
 }
 
 .Projects ul {
@@ -33,9 +33,23 @@ body {
   padding: 0px;
 }
 
+.Project-Footnote {
+  margin-top: 0px;
+  margin-bottom: var(--Footer-height);
+  padding-bottom: var(--Footer-height);
+  margin-left: 8rem;
+  margin-right: 8rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
 
 @media (max-width: 600px) {
   .Projects {
     padding: 2rem 1rem;
   }
+  .Project-Footnote {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
+

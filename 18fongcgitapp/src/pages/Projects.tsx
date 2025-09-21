@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Item from "../components/Item";
 import AsteroidsScreenshot from '../assets/AsteroidsScreenshot.png';
 function Projects() {
-  
+
   return (
     <div>
       <div className="p5-background-canvas">
@@ -13,7 +13,7 @@ function Projects() {
         <NavBar />
         <div className="Projects">
           <h2>Projects</h2>
-          <h3>Check out all the cool stuff I've made!</h3>
+          <h3>Good Stuff with Alex*</h3>
           <ul>
             <li>
               <Item id="Interactive Kinect Rain Simulation" description="One of the first coding projects I worked on, originally as a challenge to mess with a Windows Kinect and make something cool" image="https://via.placeholder.com/150" />
@@ -34,7 +34,12 @@ function Projects() {
               <Item id="Pure Pursuit Visualizer" description="A visualization tool for the Pure Pursuit algorithm, built for FTC" image="https://via.placeholder.com/150" />
             </li>
           </ul>
+
+
         </div>
+        <p className="Project-Footnote">*The phrase "Good Stuff with Alex" is inspired by "Good stuff with Woodie"
+          a segment that FIRST showcased to give critical and helpful advice to students which could be applied in and out of FIRST. While the specific
+          content and context may differ, the wording is intended as a respectful reference to the original segment.</p>
         <Footer />
       </div>
     </div>

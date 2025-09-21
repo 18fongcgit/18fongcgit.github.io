@@ -7,7 +7,7 @@
   margin-top: 2vh;
   border: 0px;
   outline: 0px;
-  
+
 }
 
 a {
@@ -77,4 +77,24 @@ a {
 .item:hover {
   z-index: -1;
   background-color: var(--main-bg-hover-color);
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item img {
+    width: 90vw;
+    height: auto;
+    margin-top: 1vh;
+  }
+
+  .item-text {
+    padding: 1vh 0;
+  }
 }
