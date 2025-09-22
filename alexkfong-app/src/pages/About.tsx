@@ -24,7 +24,7 @@ function About() {
           <h3>Related Links</h3>
           <ul>
             <li><a href="https://www.linkedin.com/in/alex-k-fong/">LinkedIn</a></li>
-            <li><a href="https://github.com/18fongcgit">GitHub</a></li>
+            <li><a href="https://github.com/alex-k-fong">GitHub</a></li>
           </ul>
         </div>
         <Footer />
